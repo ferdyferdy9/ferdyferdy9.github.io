@@ -12,3 +12,27 @@
         font-size: 3.5rem;
     }
 }
+
+.card-hover .card-img-overlay{
+    visibility: hidden;
+    opacity: 0;
+    background: transparent;
+}
+
+.card-hover:hover .card-img-overlay{
+    visibility: visible;
+    opacity: 10;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgb(0, 0, 0, 0.5) 100%);
+    transition: opacity 0.4s ease;
+}
+
+.bg-cover {
+    background-image: url('/gallery/cover.png');
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-cover .jumbotron {
+    background-color: rgba(0,0,0,0.6);
+}

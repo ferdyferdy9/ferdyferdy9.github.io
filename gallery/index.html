@@ -1,0 +1,999 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900">
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+        <nav class="mr-md-auto ml-md-5 mr-md-auto">
+          <a class="navbar-brand text-dark mr-0" href="/">
+            <img class="" width="50px" height="50px" src="/icon.png">
+            <h3 class="d-inline-block align-middle mb-0">ferdyferdy9's site</h3>
+          </a>
+        </nav>
+        <nav class="navbar-fixed-top my-1 mr-md-5">
+          <a class="p-2 text-dark align-middle" href="/">Home</a>
+          <a class="p-2 text-dark align-middle" href="/gallery/">Gallery</a>
+          <a class="p-2 text-dark align-middle" href="/comics/">Comics</a>
+          <a class="p-2 text-dark align-middle" href="/games/">Games</a>
+          <a class="p-2 text-dark align-middle" href="/about/">About</a>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      <div class="overlay bg-cover">
+        <div class="jumbotron">
+          <div class="container text-center text-light">
+            <h1 class="display-3 pb-4">Gallery</h1>
+            <p>This is the gallery. A place where I show the artworks I've made. Feel free to take a look at
+              them.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="d-flex flex-column flex-md-row mx-5">
+          <div class="col-12 col-md-2" style="min-width: 200px;">
+            <div class="list-group my-md-4 sticky-top" id="list-tab" role="tablist" style="top: 2em">
+              <a class="list-group-item list-group-item-action active" id="list-all-list" data-toggle="list"
+						href="#list-all" role="tab" aria-controls="home">All</a>
+              <a class="list-group-item list-group-item-action" id="list-original-list" data-toggle="list"
+						href="#list-original" role="tab" aria-controls="profile">Original</a>
+              <a class="list-group-item list-group-item-action" id="list-touhou-list" data-toggle="list"
+						href="#list-touhou" role="tab" aria-controls="touhou">Touhou Fan Arts</a>
+              <a class="list-group-item list-group-item-action" id="list-other-list" data-toggle="list"
+						href="#list-other" role="tab" aria-controls="other">Other</a>
+            </div>
+          </div>
+          <div class="col-fluid mt-4 mt-md-0 flex-grow-1 bg-light">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-all" role="tabpanel"
+						aria-labelledby="list-all-list">
+                <div class="container">
+                  <div
+								class="d-flex flex-row flex-wrap flex-fill py-4 justify-content-around justify-content-lg-between">
+                    <a class="my-2" href="/assets/images/gallery/original/Flowers.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Flowers.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Flowers
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/original/Life Cycle.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Life Cycle.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Life Cycle
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/original/Logo Thing.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Logo Thing.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Logo Thing
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/original/Searching.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Searching.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Searching
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/original/Strange.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Strange.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Strange
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/other/Charlotte by Kiwi612.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/other/thumbs/Charlotte by Kiwi612.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Charlotte by Kiwi612
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/other/Like Wind Over Flowers.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/other/thumbs/Like Wind Over Flowers.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Like Wind Over Flowers
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/other/Noctis.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/other/thumbs/Noctis.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Noctis
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/514.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/514.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">514
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Agony Koosh.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Agony Koosh.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Agony Koosh
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Another Me.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Another Me.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Another Me
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Artworks.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Artworks.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Artworks
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Bored Flan.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Bored Flan.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Bored Flan
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Boxed in.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Boxed in.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Boxed in
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Chiruno.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Chiruno.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Chiruno
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cirno Day Collab.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cirno Day Collab.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cirno Day Collab
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cirno Explosion.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cirno Explosion.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cirno Explosion
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cirno Stroll.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cirno Stroll.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cirno Stroll
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cirno The Ice Swordsgirl.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cirno The Ice Swordsgirl.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cirno The Ice Swordsgirl
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Clownpisu.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Clownpisu.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Clownpisu
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cry.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cry.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cry
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Delusions.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Delusions.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Delusions
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Fairy Evolution Project.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Fairy Evolution Project.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Fairy Evolution Project
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Flan Token.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Flan Token.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Flan Token
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Flan Wrath.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Flan Wrath.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Flan Wrath
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Getting Out.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Getting Out.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Getting Out
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Growing Up.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Growing Up.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Growing Up
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/HUT 2019.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/HUT 2019.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">HUT 2019
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Kijin Seija.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Kijin Seija.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Kijin Seija
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/New Koosh.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/New Koosh.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">New Koosh
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Reimu.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Reimu.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Reimu
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Rumia.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Rumia.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Rumia
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Shimmy 2.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Shimmy 2.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Shimmy 2
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Shimmy.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Shimmy.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Shimmy
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Shinmyoumaru Cup.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Shinmyoumaru Cup.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Shinmyoumaru Cup
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Smol Flan.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Smol Flan.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Smol Flan
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Smol Mystia Box.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Smol Mystia Box.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Smol Mystia Box
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Smol Reimu Cirno 2.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Smol Reimu Cirno 2.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Smol Reimu Cirno 2
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Smol Reimu Cirno.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Smol Reimu Cirno.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Smol Reimu Cirno
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Sorry.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Sorry.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Sorry
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Station and The Storm.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Station and The Storm.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Station and The Storm
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Teaching Cirno.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Teaching Cirno.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Teaching Cirno
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Top 10.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Top 10.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Top 10
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Turn It Around.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Turn It Around.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Turn It Around
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Unring a bell.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Unring a bell.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Unring a bell
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/World Perception.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/World Perception.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">World Perception
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/kono cirno da.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/kono cirno da.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">kono cirno da
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/little little wish.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/little little wish.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">little little wish
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/what food.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/what food.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">what food
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="filling-empty-space-childs"></div>
+                    <div class="filling-empty-space-childs"></div>
+                    <div class="filling-empty-space-childs"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id="list-original" role="tabpanel"
+						aria-labelledby="list-original-list">
+                <div class="container">
+                  <div
+								class="d-flex flex-row flex-wrap flex-fill py-4 justify-content-around justify-content-lg-between">
+                    <a class="my-2" href="/assets/images/gallery/original/Flowers.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Flowers.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Flowers
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/original/Life Cycle.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Life Cycle.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Life Cycle
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/original/Logo Thing.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Logo Thing.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Logo Thing
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/original/Searching.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Searching.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Searching
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/original/Strange.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/original/thumbs/Strange.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Strange
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="filling-empty-space-childs"></div>
+                    <div class="filling-empty-space-childs"></div>
+                    <div class="filling-empty-space-childs"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id="list-touhou" role="tabpanel"
+						aria-labelledby="list-touhou-list">
+                <div class="container">
+                  <div
+								class="d-flex flex-row flex-wrap flex-fill py-4 justify-content-around justify-content-lg-between">
+                    <a class="my-2" href="/assets/images/gallery/touhou/514.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/514.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">514
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Agony Koosh.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Agony Koosh.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Agony Koosh
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Another Me.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Another Me.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Another Me
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Artworks.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Artworks.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Artworks
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Bored Flan.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Bored Flan.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Bored Flan
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Boxed in.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Boxed in.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Boxed in
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Chiruno.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Chiruno.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Chiruno
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cirno Day Collab.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cirno Day Collab.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cirno Day Collab
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cirno Explosion.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cirno Explosion.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cirno Explosion
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cirno Stroll.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cirno Stroll.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cirno Stroll
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cirno The Ice Swordsgirl.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cirno The Ice Swordsgirl.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cirno The Ice Swordsgirl
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Clownpisu.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Clownpisu.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Clownpisu
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Cry.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Cry.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Cry
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Delusions.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Delusions.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Delusions
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Fairy Evolution Project.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Fairy Evolution Project.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Fairy Evolution Project
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Flan Token.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Flan Token.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Flan Token
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Flan Wrath.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Flan Wrath.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Flan Wrath
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Getting Out.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Getting Out.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Getting Out
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Growing Up.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Growing Up.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Growing Up
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/HUT 2019.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/HUT 2019.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">HUT 2019
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Kijin Seija.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Kijin Seija.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Kijin Seija
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/New Koosh.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/New Koosh.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">New Koosh
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Reimu.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Reimu.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Reimu
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Rumia.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Rumia.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Rumia
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Shimmy 2.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Shimmy 2.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Shimmy 2
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Shimmy.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Shimmy.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Shimmy
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Shinmyoumaru Cup.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Shinmyoumaru Cup.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Shinmyoumaru Cup
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Smol Flan.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Smol Flan.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Smol Flan
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Smol Mystia Box.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Smol Mystia Box.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Smol Mystia Box
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Smol Reimu Cirno 2.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Smol Reimu Cirno 2.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Smol Reimu Cirno 2
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Smol Reimu Cirno.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Smol Reimu Cirno.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Smol Reimu Cirno
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Sorry.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Sorry.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Sorry
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Station and The Storm.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Station and The Storm.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Station and The Storm
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Teaching Cirno.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Teaching Cirno.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Teaching Cirno
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Top 10.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Top 10.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Top 10
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Turn It Around.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Turn It Around.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Turn It Around
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/Unring a bell.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/Unring a bell.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Unring a bell
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/World Perception.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/World Perception.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">World Perception
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/kono cirno da.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/kono cirno da.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">kono cirno da
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/little little wish.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/little little wish.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">little little wish
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/touhou/what food.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/touhou/thumbs/what food.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">what food
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="filling-empty-space-childs"></div>
+                    <div class="filling-empty-space-childs"></div>
+                    <div class="filling-empty-space-childs"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id="list-other" role="tabpanel"
+						aria-labelledby="list-other-list">
+                <div class="container">
+                  <div
+								class="d-flex flex-row flex-wrap flex-fill py-4 justify-content-around justify-content-lg-between">
+                    <a class="my-2" href="/assets/images/gallery/other/Charlotte by Kiwi612.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/other/thumbs/Charlotte by Kiwi612.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Charlotte by Kiwi612
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/other/Like Wind Over Flowers.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/other/thumbs/Like Wind Over Flowers.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Like Wind Over Flowers
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="my-2" href="/assets/images/gallery/other/Noctis.png" target="_blank">
+                      <div class="card card-hover bg-light text-white">
+                        <img class="card-img" src="/assets/images/gallery/other/thumbs/Noctis.png"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text text-center">Noctis
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="filling-empty-space-childs"></div>
+                    <div class="filling-empty-space-childs"></div>
+                    <div class="filling-empty-space-childs"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
