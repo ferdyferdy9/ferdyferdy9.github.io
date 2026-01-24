@@ -1,0 +1,144 @@
+{
+    "ː": {
+        "width": 102,
+        "kernel": {},
+        "offset": 1
+    },
+    "a": {
+        "width": 138,
+        "kernel": {},
+        "offset": 4
+    },
+    "b": {
+        "width": 256,
+        "kernel": {}
+    },
+    "d": {
+        "width": 256,
+        "kernel": {}
+    },
+    "ð": {
+        "width": 256,
+        "kernel": {}
+    },
+    "dʒ": {
+        "width": 256,
+        "kernel": {}
+    },
+    "e": {
+        "width": 256,
+        "kernel": {}
+    },
+    "ə": {
+        "width": 256,
+        "kernel": {}
+    },
+    "f": {
+        "width": 256,
+        "kernel": {}
+    },
+    "g": {
+        "width": 256,
+        "kernel": {}
+    },
+    "ɣ": {
+        "width": 256,
+        "kernel": {}
+    },
+    "h": {
+        "width": 256,
+        "kernel": {}
+    },
+    "i": {
+        "width": 256,
+        "kernel": {}
+    },
+    "j": {
+        "width": 256,
+        "kernel": {}
+    },
+    "k": {
+        "width": 256,
+        "kernel": {}
+    },
+    "l": {
+        "width": 256,
+        "kernel": {}
+    },
+    "m": {
+        "width": 256,
+        "kernel": {}
+    },
+    "n": {
+        "width": 256,
+        "kernel": {}
+    },
+    "ɲ": {
+        "width": 256,
+        "kernel": {}
+    },
+    "ŋ": {
+        "width": 256,
+        "kernel": {}
+    },
+    "o": {
+        "width": 256,
+        "kernel": {}
+    },
+    "p": {
+        "width": 256,
+        "kernel": {}
+    },
+    "r": {
+        "width": 256,
+        "kernel": {}
+    },
+    "s": {
+        "width": 256,
+        "kernel": {}
+    },
+    "ʃ": {
+        "width": 256,
+        "kernel": {}
+    },
+    "t": {
+        "width": 256,
+        "kernel": {}
+    },
+    "tʃ": {
+        "width": 256,
+        "kernel": {}
+    },
+    "u": {
+        "width": 256,
+        "kernel": {}
+    },
+    "v": {
+        "width": 256,
+        "kernel": {}
+    },
+    "w": {
+        "width": 256,
+        "kernel": {}
+    },
+    "x": {
+        "width": 256,
+        "kernel": {}
+    },
+    "z": {
+        "width": 256,
+        "kernel": {}
+    },
+    "ʒ": {
+        "width": 256,
+        "kernel": {}
+    },
+    "ʔ": {
+        "width": 256,
+        "kernel": {}
+    },
+    "θ": {
+        "width": 256,
+        "kernel": {}
+    }
+}

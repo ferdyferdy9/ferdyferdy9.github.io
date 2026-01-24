@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Click Event Tutorial</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Marble Language Tool</h1>
+            <div id="main-text-area" class="text-area"></div>
+        </div>
+        <hr />
+        <div>
+            <h1>Letter Config</h1>
+            <div class="flex-horizontal">
+                <label id="upload-config">
+                    Load config
+                    <input class="file-input" type="file" accept=".json" oninput="loadConfig()"/>
+                </label>
+                <button id="download-config" onclick="downloadConfig()">Download Config</button>
+            </div>
+            <div class="flex-horizontal">
+                <div>
+                    <div id="spacing-text-area" class="text-area"></div>
+                    <div id="spacing-keyboard" class="keyboard"></div>
+                </div>
+                <div class="verticalLine" class="flex-vertical">
+                    <div class="canvas">
+                        <img id="config-letter-preview-image" src="" width="256px" height="256px" style="position:absolute" />
+                        <svg width="256" height="256" style="position:absolute">
+                            <rect id="config-letter-rect" width=64 height=256 x=96 style="fill:rgba(255, 128, 128, 0.5)" />
+                        </svg> 
+                    </div>
+                    <div class="flex-horizontal">
+                        <p>width</p>
+                        <input id="config-letter-width" type="number" class="number-input" onchange="update_letter_config_to_input()" value="0" min="0"/>
+                    </div>
+                    <div class="flex-horizontal">
+                        <p>offset</p>
+                        <input id="config-letter-offset" type="number" class="number-input" onchange="update_letter_config_to_input()" value="0"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

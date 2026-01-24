@@ -1,0 +1,164 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+button {
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button.letter-input {
+    background-color: lightgray;
+    width: 46px;
+    margin: 2px;
+}
+
+button.letter-input:hover {
+    background-color: whitesmoke;
+}
+
+button.letter-input:active {
+    background-color: darkgray;
+}
+
+img.letter-input {
+    width: 32px;
+    height: 32px;
+    transform: scale(1.5);
+}
+
+img.letter-output {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    padding: 0px;
+}
+
+p {
+    margin: 5px;
+}
+
+p.letter-input {
+    font-size: 2rem;
+    margin: 0px;
+    text-align: center;
+}
+
+div {
+    margin: 5px;
+}
+
+div.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+div.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.text-area {
+    min-height: 32px;
+    max-width: 600px;
+    position: relative;
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+div.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+div.verticalLine {
+    border-left: thick solid whitesmoke;
+    padding-left: 8px;
+}
+
+div.canvas {
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+input.file-input {
+    display: none;
+}
+
+input.number-input {
+    height: 24px;
+    width: 48px;
+    align-self: center;
+    text-align: center;
+}
+
+#upload-config {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: lightgray;
+    color: black;
+    width: 120px;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+#upload-config:hover {
+    background-color: whitesmoke;
+}
+
+#upload-config:active {
+    background-color: darkgray;
+}
+
+#download-config {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: lightgray;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+#download-config:hover {
+    background-color: whitesmoke;
+}
+
+#download-config:active {
+    background-color: darkgray;
+}
+
+div.canvas {
+    position: relative;
+    min-width: 256px;
+    min-height: 256px;
+}
