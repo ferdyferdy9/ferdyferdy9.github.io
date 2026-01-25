@@ -14,16 +14,22 @@ let letter_spacing = 4;
 
 
 function addLetter(text_area_id, letter) {
+    let letter_config = config[letter];
+
     let text_area = document.getElementById(text_area_id);
     let img = document.createElement("img");
     img.className = "letter-output";
     img.src = "letters/" + letter + ".svg";
-    img.style.left = (text_area.cursor_position_x ?? 5).toString() + "px";
-    img.style.top = (text_area.cursor_position_y ?? 5).toString() + "px";
+
+    let cursor_position_x = (text_area.cursor_position_x ?? 10);
+    let cursor_position_y = (text_area.cursor_position_y ?? 5);
+    let letter_width = letter_config.width ?? 256;
+    let letter_offset = letter_config.offset ?? 0;
+    let x = cursor_position_x - (512 * 0.5 + letter_offset - letter_width * 0.5) / 16.0
+    img.style.left = x.toString() + "px";
+    img.style.top = cursor_position_y.toString() + "px";
     
-    let letter_config = config[letter];
-    let cursor_position_x = (text_area.cursor_position_x ?? 5);
-    cursor_position_x += (letter_config.width ?? 256) / 16.0;
+    cursor_position_x += letter_width / 16.0;
     cursor_position_x += letter_spacing;
     text_area.cursor_position_x = cursor_position_x;
 
@@ -34,16 +40,25 @@ function addLetter(text_area_id, letter) {
 
 function deleteLetter(text_area_id) {
     let text_area = document.getElementById(text_area_id);
+    
+    if (text_area.written_text === undefined || text_area.written_text.length === 0) {
+        return;
+    }
+    
+    let cursor_position_x = (text_area.cursor_position_x ?? 10);
     let letter = text_area.written_text.at(-1);
-    text_area.cursor_position_x = Math.max(text_area.cursor_position_x - config[letter].width ?? 256, 5);
+    let letter_config = config[letter];
+    let letter_width = letter_config.width ?? 256;
+    text_area.cursor_position_x = Math.max(cursor_position_x - letter_width / 16.0 - letter_spacing, 10);
     text_area.removeChild(text_area.lastChild);
+    text_area.written_text = text_area.written_text.slice(0, text_area.written_text.length - 1);
 }
 
 
 function clearLetters(text_area_id) {
     let text_area = document.getElementById(text_area_id);
     text_area.textContent = "";
-    text_area.cursor_position_x = 5;
+    text_area.cursor_position_x = 10;
     text_area.cursor_position_y = 5;
 }
 
