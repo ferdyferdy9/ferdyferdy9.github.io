@@ -48,15 +48,30 @@ function addLetter(text_area_id, letter) {
 }
 
 
+function addLetterSpace(text_area_id) {
+    let text_area = document.getElementById(text_area_id);
+    let cursor_position_x = (text_area.cursor_position_x ?? 10);
+    text_area.cursor_position_x = cursor_position_x + 128 / 16.0;
+    text_area.written_text = (text_area.written_text ?? "") + " ";
+}
+
+
 function deleteLetter(text_area_id) {
     let text_area = document.getElementById(text_area_id);
     
     if (text_area.written_text === undefined || text_area.written_text.length === 0) {
         return;
     }
-    
+
     let cursor_position_x = (text_area.cursor_position_x ?? 10);
     let letter = text_area.written_text.at(-1);
+    
+    if (letter == " ") {
+        text_area.cursor_position_x -= 128 / 16.0;
+        text_area.written_text = text_area.written_text.slice(0, text_area.written_text.length - 1);
+        return;
+    }
+    
     let letter_config = config[letter];
     let letter_width = letter_config.width ?? 256;
 
@@ -188,6 +203,21 @@ function createKeyboard(target_text_area_id) {
 
         let p = document.createElement("p");
         p.innerText = "←";
+        p.className = "letter-input";
+        button.insertAdjacentElement("beforeend", p);
+
+        keyboard.insertAdjacentElement("beforeend", button);
+    }
+
+    {
+        let button = document.createElement("button");
+        button.onclick = addLetterSpace.bind(this, target_text_area_id);
+        button.className = "letter-input";
+        button.style.width = "256px";
+        button.style.margin = "auto";
+
+        let p = document.createElement("p");
+        p.innerText = "Space";
         p.className = "letter-input";
         button.insertAdjacentElement("beforeend", p);
 
@@ -346,10 +376,18 @@ function kerningSelectPrev() {
 
 
 function createImage(text) {
-    let canvas = document.getElementById("export-canvas");
+    if (text == undefined || text == "") {
+        return;
+    }
 
+    let canvas = document.getElementById("export-canvas");
     let canvas_width = 40;
     for (let letter of text) {
+        if (letter == " ") {
+            canvas_width += 128;
+            continue;
+        }
+
         let letter_config = config[letter];
         let letter_width = letter_config.width ?? 256;
         canvas_width += letter_width;
@@ -365,6 +403,12 @@ function createImage(text) {
     let written_text = "";
 
     for (let letter of text) {
+        if (letter == " ") {
+            cursor_position_x += 128;
+            written_text += " ";
+            continue;
+        }
+
         let letter_config = config[letter];
         let letter_width = letter_config.width ?? 256;
         let letter_offset = letter_config.offset ?? 0;
