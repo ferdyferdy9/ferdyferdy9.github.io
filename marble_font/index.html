@@ -11,12 +11,12 @@
 
 <body>
     <div>
-        <div>
+        <div class="flex-vertical">
             <h1>Marble Language Tool</h1>
             <div id="main-text-area" class="text-area"></div>
         </div>
-        <hr />
         <div>
+            <hr />
             <h1>Letter Config</h1>
             <div class="flex-horizontal">
                 <label id="upload-config">
@@ -30,7 +30,7 @@
                     <div id="spacing-text-area" class="text-area"></div>
                     <div id="spacing-keyboard" class="keyboard"></div>
                 </div>
-                <div class="verticalLine" class="flex-vertical">
+                <div class="verticalLine">
                     <div class="canvas">
                         <img id="config-letter-preview-image" src="" width="256px" height="256px" style="position:absolute" />
                         <svg width="256" height="256" style="position:absolute">
@@ -39,11 +39,45 @@
                     </div>
                     <div class="flex-horizontal">
                         <p>width</p>
-                        <input id="config-letter-width" type="number" class="number-input" onchange="update_letter_config_to_input()" value="0" min="0"/>
+                        <input id="config-letter-width" type="number" class="number-input" onchange="updateLetterConfigToInput()" value="0" min="0"/>
                     </div>
                     <div class="flex-horizontal">
                         <p>offset</p>
-                        <input id="config-letter-offset" type="number" class="number-input" onchange="update_letter_config_to_input()" value="0"/>
+                        <input id="config-letter-offset" type="number" class="number-input" onchange="updateLetterConfigToInput()" value="0"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-vertical">
+            <h1>Letter Kerning</h1>
+            
+            <div class="flex-horizontal">
+                <div id="kerning-canvas-view" class="canvas-wide">
+                    <img id="kerning-image-view-first" src="" width="256px" height="256px" style="position:absolute" />
+                    <img id="kerning-image-view-second" src="" width="256px" height="256px" style="position:absolute" />
+                </div>
+                <div id="kerning-canvas-debug" class="canvas-wide">
+                    <img id="kerning-image-debug-first" src="" width="256px" height="256px" style="position:absolute" />
+                    <img id="kerning-image-debug-second" src="" width="256px" height="256px" style="position:absolute" />
+                    <svg width="384" height="256" style="position:absolute">
+                        <rect id="kerning-rect-first" width=64 height=256 x=96 style="fill:rgba(128, 128, 255, 0.5)" />
+                        <rect id="kerning-rect-second" width=64 height=256 x=96 style="fill:rgba(128, 255, 128, 0.5)" />
+                    </svg>
+                </div>
+            </div>
+            <div class="flex-horizontal-baseline">
+                <div class="flex-vertical">
+                    <div id="kerning-keyboard-first" class="keyboard"></div>
+                    <div id="kerning-keyboard-second" class="keyboard"></div>
+                </div>
+                <div class="verticalLine">
+                    <div class="flex-horizontal">
+                        <p>Kerning offset</p>
+                        <input id="kerning-letter-width" type="number" class="number-input" onchange="updateSelectedKerningOffset()" value="0"/>
+                    </div>
+                    <div class="flex-horizontal">
+                        <button id="kerning-button-prev" onclick="kerningSelectPrev()">Previous</button>
+                        <button id="kerning-button-next" onclick="kerningSelectNext()" style="margin-left: 4px;">Next</button>
                     </div>
                 </div>
             </div>

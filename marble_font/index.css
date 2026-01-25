@@ -34,6 +34,21 @@ button.letter-input:active {
     background-color: darkgray;
 }
 
+button.letter-input.pressed {
+    background-color: darkgray;
+    cursor: default;
+}
+
+button.letter-input.pressed:hover {
+    background-color: darkgray;
+    cursor: default;
+}
+
+button.letter-input.pressed:active {
+    background-color: darkgray;
+    cursor: default;
+}
+
 img.letter-input {
     width: 32px;
     height: 32px;
@@ -65,17 +80,33 @@ div.flex-horizontal {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
 
+div.flex-horizontal-baseline {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
 }
 
 div.flex-vertical {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+div.flex-vertical-baseline {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
 }
 
 div.text-area {
     min-height: 32px;
+    min-width: 600px;
     max-width: 600px;
     position: relative;
     padding: 7px;
@@ -87,19 +118,13 @@ div.text-area {
 div.keyboard {
     display: flex;
     flex-wrap: wrap;
+    min-width: 600px;
     max-width: 600px;
 }
 
 div.verticalLine {
-    border-left: thick solid whitesmoke;
+    border-left: thin solid whitesmoke;
     padding-left: 8px;
-}
-
-div.canvas {
-    padding: 7px;
-    border: none;
-    border-radius: 8px;
-    background-color: whitesmoke;
 }
 
 input.file-input {
@@ -158,7 +183,21 @@ input.number-input {
 }
 
 div.canvas {
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    background-color: whitesmoke;
     position: relative;
     min-width: 256px;
+    min-height: 256px;
+}
+
+div.canvas-wide {
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    position: relative;
+    min-width: 384px;
     min-height: 256px;
 }

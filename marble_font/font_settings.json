@@ -1,177 +1,177 @@
 {
     "ː": {
         "width": 102,
-        "kernel": {},
+        "kerning": {},
         "offset": 1
     },
     "a": {
         "width": 138,
-        "kernel": {},
+        "kerning": {},
         "offset": 4
     },
     "b": {
         "width": 236,
-        "kernel": {},
+        "kerning": {},
         "offset": 18
     },
     "d": {
         "width": 164,
-        "kernel": {},
+        "kerning": {},
         "offset": -6
     },
     "ð": {
         "width": 266,
-        "kernel": {},
+        "kerning": {},
         "offset": -20
     },
     "dʒ": {
         "width": 288,
-        "kernel": {},
+        "kerning": {},
         "offset": -35
     },
     "e": {
         "width": 120,
-        "kernel": {},
+        "kerning": {},
         "offset": 4
     },
     "ə": {
         "width": 157,
-        "kernel": {},
+        "kerning": {},
         "offset": -2
     },
     "f": {
         "width": 296,
-        "kernel": {},
+        "kerning": {},
         "offset": 1
     },
     "g": {
         "width": 226,
-        "kernel": {},
+        "kerning": {},
         "offset": -16
     },
     "ɣ": {
         "width": 226,
-        "kernel": {},
+        "kerning": {},
         "offset": 24
     },
     "h": {
         "width": 152,
-        "kernel": {},
+        "kerning": {},
         "offset": 0
     },
     "i": {
         "width": 34,
-        "kernel": {},
+        "kerning": {},
         "offset": 0
     },
     "j": {
         "width": 34,
-        "kernel": {},
+        "kerning": {},
         "offset": 0
     },
     "k": {
         "width": 190,
-        "kernel": {},
+        "kerning": {},
         "offset": 2
     },
     "l": {
         "width": 166,
-        "kernel": {},
+        "kerning": {},
         "offset": 4
     },
     "m": {
         "width": 250,
-        "kernel": {},
+        "kerning": {},
         "offset": 0
     },
     "n": {
         "width": 228,
-        "kernel": {},
+        "kerning": {},
         "offset": 6
     },
     "ɲ": {
         "width": 250,
-        "kernel": {},
+        "kerning": {},
         "offset": 2
     },
     "ŋ": {
         "width": 250,
-        "kernel": {},
+        "kerning": {},
         "offset": 5
     },
     "o": {
         "width": 112,
-        "kernel": {},
+        "kerning": {},
         "offset": 12
     },
     "p": {
         "width": 194,
-        "kernel": {},
+        "kerning": {},
         "offset": -3
     },
     "r": {
         "width": 182,
-        "kernel": {},
+        "kerning": {},
         "offset": -10
     },
     "s": {
         "width": 232,
-        "kernel": {},
+        "kerning": {},
         "offset": -2
     },
     "ʃ": {
         "width": 232,
-        "kernel": {},
+        "kerning": {},
         "offset": -6
     },
     "t": {
         "width": 130,
-        "kernel": {},
+        "kerning": {},
         "offset": 12
     },
     "tʃ": {
         "width": 290,
-        "kernel": {},
+        "kerning": {},
         "offset": -35
     },
     "u": {
         "width": 112,
-        "kernel": {},
+        "kerning": {},
         "offset": 0
     },
     "v": {
         "width": 308,
-        "kernel": {},
+        "kerning": {},
         "offset": 7
     },
     "w": {
         "width": 192,
-        "kernel": {},
+        "kerning": {},
         "offset": 3
     },
     "x": {
         "width": 198,
-        "kernel": {},
+        "kerning": {},
         "offset": 10
     },
     "z": {
         "width": 268,
-        "kernel": {},
+        "kerning": {},
         "offset": -20
     },
     "ʒ": {
         "width": 270,
-        "kernel": {},
+        "kerning": {},
         "offset": -25
     },
     "ʔ": {
         "width": 66,
-        "kernel": {},
+        "kerning": {},
         "offset": 5
     },
     "θ": {
         "width": 232,
-        "kernel": {},
+        "kerning": {},
         "offset": -2
     }
 }
