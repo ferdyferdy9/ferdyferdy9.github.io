@@ -10,12 +10,15 @@
 </head>
 
 <body>
+    <button onclick="toggleDevTools()">Dev Tools</button>
     <div>
         <div class="flex-vertical">
             <h1>Marble Language Tool</h1>
             <div id="main-text-area" class="text-area"></div>
+            <button onclick="exportText()" style="font-size: 2em;">Generate Image</button>
+		    <canvas id="export-canvas" width="0" height="0" style="border:1px solid #000000;"></canvas>
         </div>
-        <div>
+        <div class="flex-vertical dev-tool hidden">
             <hr />
             <h1>Letter Config</h1>
             <div class="flex-horizontal">
@@ -48,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex-vertical">
+        <div class="flex-vertical dev-tool hidden">
             <h1>Letter Kerning</h1>
             
             <div class="flex-horizontal">

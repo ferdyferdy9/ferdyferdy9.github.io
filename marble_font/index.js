@@ -13,6 +13,7 @@ let kerning_selected_letter_first = 'ː';
 let kerning_selected_letter_second = 'ː';
 let is_editing = false;
 let letter_spacing = 4;
+let loaded_img_dict = {};
 
 
 function addLetter(text_area_id, letter) {
@@ -344,8 +345,72 @@ function kerningSelectPrev() {
 }
 
 
+function createImage(text) {
+    let canvas = document.getElementById("export-canvas");
+
+    let canvas_width = 40;
+    for (let letter of text) {
+        let letter_config = config[letter];
+        let letter_width = letter_config.width ?? 256;
+        canvas_width += letter_width;
+    }
+    canvas_width += (text.length-1) * letter_spacing * 16;
+
+    canvas.setAttribute("width", canvas_width);
+    canvas.setAttribute("height", "512");
+
+    var ctx = canvas.getContext("2d");
+    let cursor_position_x = 20;
+    let cursor_position_y = 0;
+    let written_text = "";
+
+    for (let letter of text) {
+        let letter_config = config[letter];
+        let letter_width = letter_config.width ?? 256;
+        let letter_offset = letter_config.offset ?? 0;
+
+        let letter_kerning = 0;
+        if (written_text.length > 0) {
+            var prev_letter = written_text.at(-1);
+            letter_kerning = letter_config.kerning[prev_letter] ?? 0;
+        }
+
+        let x = cursor_position_x - (512 * 0.5 + letter_offset - letter_width * 0.5) - letter_kerning
+        let img = loaded_img_dict[letter];
+        ctx.drawImage(img, x, cursor_position_y);
+
+        cursor_position_x += letter_width - letter_kerning;
+        cursor_position_x += letter_spacing * 16;
+        written_text += letter;
+    }
+}
+
+
+function loadLetters() {
+    for (let i=0; i<LETTERS.length; i++) {
+        let img = new Image;
+        img.src = "letters/" + LETTERS[i] + ".svg";
+        loaded_img_dict[LETTERS[i]] = img;
+    }
+}
+
+
+function exportText(){
+    let text_area = document.getElementById("main-text-area");
+    createImage(text_area.written_text);
+}
+
+function toggleDevTools() {
+    let elements = document.getElementsByClassName("dev-tool");
+    for (let e of elements) {
+        e.classList.toggle("hidden");
+    }
+}
+
+
 function main() {
     initConfig();
+    loadLetters();
 
     createKeyboard("main-text-area");
     createKeyboardIconOnly("spacing-keyboard", setConfigSelectedLetter);
