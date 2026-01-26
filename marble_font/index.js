@@ -14,6 +14,7 @@ let kerning_selected_letter_second = 'ː';
 let is_editing = false;
 let letter_spacing = 4;
 let loaded_img_dict = {};
+let export_font_size = 32;
 
 
 function addLetter(text_area_id, letter) {
@@ -381,24 +382,24 @@ function createImage(text) {
         return;
     }
 
-    let canvas = document.getElementById("export-canvas");
     let canvas_width = 40;
     for (let letter of text) {
         if (letter == " ") {
             canvas_width += 128;
             continue;
         }
-
+        
         let letter_config = config[letter];
         let letter_width = letter_config.width ?? 256;
         canvas_width += letter_width;
     }
     canvas_width += (text.length-1) * letter_spacing * 16;
+    
+    let scale = export_font_size*0.75/256.0;
+    let canvas = document.getElementById("export-canvas");
+    canvas.setAttribute("width", canvas_width * scale);
+    canvas.setAttribute("height", 512 * scale);
 
-    canvas.setAttribute("width", canvas_width);
-    canvas.setAttribute("height", "512");
-
-    var ctx = canvas.getContext("2d");
     let cursor_position_x = 20;
     let cursor_position_y = 0;
     let written_text = "";
@@ -422,13 +423,20 @@ function createImage(text) {
 
         let x = cursor_position_x - (512 * 0.5 + letter_offset - letter_width * 0.5) - letter_kerning
         let img = loaded_img_dict[letter];
-        ctx.drawImage(img, x, cursor_position_y);
+        drawImageOnCanvas(img, x, cursor_position_y);
 
         cursor_position_x += letter_width - letter_kerning;
         cursor_position_x += letter_spacing * 16;
         written_text += letter;
     }
     setExportHelpVisible(true);
+}
+
+function drawImageOnCanvas(img, x, y) {
+    let scale = export_font_size*0.75/256.0;
+    let canvas = document.getElementById("export-canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, x * scale, y * scale, 512 * scale, 512 * scale);
 }
 
 function setExportHelpVisible(is_visible) {
@@ -455,11 +463,18 @@ function exportText(){
     createImage(text_area.written_text);
 }
 
+
 function toggleDevTools() {
     let elements = document.getElementsByClassName("dev-tool");
     for (let e of elements) {
         e.classList.toggle("hidden");
     }
+}
+
+
+function setFontSizeToInput() {
+    let font_size_input = document.getElementById("font-size-input");
+    export_font_size = parseFloat(font_size_input.value);
 }
 
 
