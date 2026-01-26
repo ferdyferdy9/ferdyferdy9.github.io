@@ -377,6 +377,7 @@ function kerningSelectPrev() {
 
 function createImage(text) {
     if (text == undefined || text == "") {
+        setExportHelpVisible(false);
         return;
     }
 
@@ -426,6 +427,16 @@ function createImage(text) {
         cursor_position_x += letter_width - letter_kerning;
         cursor_position_x += letter_spacing * 16;
         written_text += letter;
+    }
+    setExportHelpVisible(true);
+}
+
+function setExportHelpVisible(is_visible) {
+    let export_help = document.getElementById("export-help");
+    if (is_visible) {
+        export_help.classList.remove("hidden");
+    } else {
+        export_help.classList.add("hidden");
     }
 }
 
