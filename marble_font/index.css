@@ -101,6 +101,10 @@ div.flex-vertical-baseline {
     align-items: baseline;
 }
 
+div.white-background {
+    background-color: whitesmoke;
+}
+
 div.text-area {
     min-height: 32px;
     min-width: 600px;
@@ -177,6 +181,11 @@ input.number-input {
 
 #download-config:active {
     background-color: darkgray;
+}
+
+#export-canvas {
+    border: none;
+    outline: none;
 }
 
 div.canvas {

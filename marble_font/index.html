@@ -18,74 +18,234 @@
             <hr />
             <div class="flex-horizontal">
                 <p>Generate Image Font Size: </p>
-                <input type="number" class="number-input" id="font-size-input" onchange="setFontSizeToInput()" min="0" value="32"/>
+                <input type="number" class="number-input" id="font-size-input" onchange="setFontSizeToInput()" min="0"
+                    value="32" />
             </div>
             <button onclick="exportText()" style="font-size: 2em;">Generate Image</button>
             <p id="export-help" class="hidden">How to save: Right click image below > Save image as...</p>
-		    <canvas id="export-canvas" width="0" height="0" style="border:1px solid #000000;"></canvas>
-        </div>
-        <div class="flex-vertical dev-tool hidden">
-            <hr />
-            <h1>Letter Config</h1>
-            <div class="flex-horizontal">
-                <label id="upload-config">
-                    Load config
-                    <input class="file-input" type="file" accept=".json" oninput="loadConfig()"/>
-                </label>
-                <button id="download-config" onclick="downloadConfig()">Download Config</button>
+            <div class="white-background">
+                <canvas id="export-canvas" width="0" height="0"></canvas>
             </div>
-            <div class="flex-horizontal">
-                <div>
-                    <div id="spacing-text-area" class="text-area"></div>
-                    <div id="spacing-keyboard" class="keyboard"></div>
-                </div>
-                <div class="verticalLine">
-                    <div class="canvas">
-                        <img id="config-letter-preview-image" src="" width="256px" height="256px" style="position:absolute" />
-                        <svg width="256" height="256" style="position:absolute">
-                            <rect id="config-letter-rect" width=64 height=256 x=96 style="fill:rgba(255, 128, 128, 0.5)" />
-                        </svg> 
-                    </div>
-                    <div class="flex-horizontal">
-                        <p>width</p>
-                        <input id="config-letter-width" type="number" class="number-input" onchange="updateLetterConfigToInput()" value="0" min="0"/>
-                    </div>
-                    <div class="flex-horizontal">
-                        <p>offset</p>
-                        <input id="config-letter-offset" type="number" class="number-input" onchange="updateLetterConfigToInput()" value="0"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex-vertical dev-tool hidden">
-            <div class="flex-horizontal">
-                <div id="kerning-canvas-view" class="canvas-wide">
-                    <img id="kerning-image-view-first" src="" width="256px" height="256px" style="position:absolute" />
-                    <img id="kerning-image-view-second" src="" width="256px" height="256px" style="position:absolute" />
-                </div>
-                <div id="kerning-canvas-debug" class="canvas-wide">
-                    <img id="kerning-image-debug-first" src="" width="256px" height="256px" style="position:absolute" />
-                    <img id="kerning-image-debug-second" src="" width="256px" height="256px" style="position:absolute" />
-                    <svg width="384" height="256" style="position:absolute">
-                        <rect id="kerning-rect-first" width=64 height=256 x=96 style="fill:rgba(128, 128, 255, 0.5)" />
-                        <rect id="kerning-rect-second" width=64 height=256 x=96 style="fill:rgba(128, 255, 128, 0.5)" />
-                    </svg>
-                </div>
+            <div style="width: 640px;">
+                <p>The Marble Language Tool is created by MarbleFlower and FerdysLab9 for use in Marble's commissioned
+                    artwork and fictional settings. There is one modern alphabet available for now, but more writing
+                    systems are planned for the future. The alphabet is generally phonetic, and what is written is
+                    typically what is actually pronounced. The alphabet can be used to write many different real world
+                    and fictional languages, so some letters are assigned to multiple sounds. These sounds are
+                    allophones, enclosed in square brackets, and would be understood as the same sound in the language
+                    that Marble and other characters speak.</p>
+                <p>The language can be transcribed with a Romanisation system for readability. The corresponding
+                    transcription for each letter is enclosed in angle brackets. All letters can be typed
+                    with a standard QWERTY keyboard without diacritics, with the exception of an optional diaeresis for
+                    syllable pacing (for example &lt;Zoë&gt;). The letters C, J, Q, and X are not used for unambiguity.
+                </p>
             </div>
             <div class="flex-horizontal-baseline">
-                <div class="flex-vertical">
-                    <div id="kerning-keyboard-first" class="keyboard"></div>
-                    <div id="kerning-keyboard-second" class="keyboard"></div>
+                <div>
+                    <h3>Consonants</h3>
+                    <ul>
+                        <li>/b/
+                            &lt;b&gt;
+                            <strong>b</strong>ut
+                        </li>
+                        <li>/d/
+                            &lt;d&gt;
+                            <strong>d</strong>o
+                        </li>
+                        <li>/dz/
+                            &lt;dz&gt;
+                            bi<strong>ds</strong></li>
+                        <li>/dʒ/ [dʒ, dʐ, dʑ]
+                            &lt;dzh&gt;
+                            <strong>j</strong>oy
+                        </li>
+                        <li>/f/ [f, ɸ]
+                            &lt;f&gt;
+                            <strong>f</strong>ine
+                        </li>
+                        <li>/g/
+                            &lt;g&gt;
+                            <strong>g</strong>et
+                        </li>
+                        <li>/ɣ/
+                            &lt;gh&gt;
+                            <em>Spanish</em> ami<strong>g</strong>o
+                        </li>
+                        <li>/h/ [h, ɦ]
+                            &lt;h&gt;
+                            <strong>h</strong>at
+                        </li>
+                        <li>/j/
+                            &lt;y&gt;
+                            <strong>y</strong>es
+                        </li>
+                        <li>/k/
+                            &lt;k&gt;
+                            <strong>k</strong>ind
+                        </li>
+                        <li>/l/
+                            &lt;l&gt;
+                            <strong>l</strong>ie
+                        </li>
+                        <li>/m/
+                            &lt;m&gt;
+                            <strong>m</strong>oon
+                        </li>
+                        <li>/n/
+                            &lt;n&gt;
+                            <strong>n</strong>ote
+                        </li>
+                        <li>/ɲ/
+                            &lt;ny&gt;
+                            ca<strong>ny</strong>on</li>
+                        <li>/ŋ/
+                            &lt;ng&gt;
+                            si<strong>ng</strong></li>
+                        <li>/p/
+                            &lt;p&gt;
+                            <strong>p</strong>ie
+                        </li>
+                        <li>/r/ [r, ɾ, ɹ, ʁ]
+                            &lt;r&gt;
+                            <em>Spanish</em> <strong>r</strong>io
+                        </li>
+                        <li>/s/
+                            &lt;s&gt; [s, θ]
+                            <strong>s</strong>ign
+                        </li>
+                        <li>/ʃ/ [ʃ, ʂ, ɕ]
+                            &lt;sh&gt;
+                            <strong>sh</strong>y
+                        </li>
+                        <li>/t/
+                            &lt;t&gt;
+                            <strong>t</strong>all
+                        </li>
+                        <li>/ts/
+                            &lt;ts&gt;
+                            ca<strong>ts</strong></li>
+                        <li>/tʃ/ [tʃ, tʂ, tɕ]
+                            &lt;tsh&gt;
+                            <strong>ch</strong>ew
+                        </li>
+                        <li>/v/ [v, β]
+                            &lt;v&gt;
+                            <strong>v</strong>anish
+                        </li>
+                        <li>/w/ [w, ʋ]
+                            &lt;w&gt;
+                            <strong>w</strong>ine
+                        </li>
+                        <li>/x/
+                            &lt;kh&gt;
+                            <em>Scottish</em> lo<strong>ch</strong>
+                        </li>
+                        <li>/z/ [z, ð]
+                            &lt;z&gt;
+                            <strong>z</strong>oo
+                        </li>
+                        <li>/ʒ/ [ʒ, ʐ, ʑ]
+                            &lt;zh&gt;
+                            mea<strong>s</strong>ure</li>
+                        <li>/ʔ/
+                            &lt;&#39;&gt;
+                            uh<strong>-</strong>oh</li>
+                    </ul>
                 </div>
-                <div class="verticalLine">
-                    <div class="flex-horizontal">
-                        <p>Kerning offset</p>
-                        <input id="kerning-letter-width" type="number" class="number-input" onchange="updateSelectedKerningOffset()" value="0"/>
-                    </div>
-                    <div class="flex-horizontal">
-                        <button id="kerning-button-prev" onclick="kerningSelectPrev()">Previous</button>
-                        <button id="kerning-button-next" onclick="kerningSelectNext()" style="margin-left: 4px;">Next</button>
-                    </div>
+                <div>
+                    <h3>Vowels</h3>
+                    <ul>
+                        <li>/ː/
+                            vowel length extender</li>
+                        <li>/a/ [a, æ, ɑ, ɒ]
+                            &lt;a&gt;
+                            f<strong>a</strong>ther</li>
+                        <li>/e/ [e, ɛ]
+                            &lt;e&gt;
+                            l<strong>a</strong>ke</li>
+                        <li>/ə/
+                            &lt;a&gt; at end of word, otherwise &lt;e&gt;
+                            comm<strong>a</strong></li>
+                        <li>/i/ [i, y, ɪ, ʏ]
+                            &lt;i&gt;
+                            s<strong>ee</strong></li>
+                        <li>/o/ [o, ɔ]
+                            &lt;o&gt;
+                            st<strong>o</strong>ry</li>
+                        <li>/u/ [u, ʊ]
+                            &lt;u&gt;
+                            c<strong>oo</strong>l</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-vertical dev-tool hidden">
+        <hr />
+        <h1>Letter Config</h1>
+        <div class="flex-horizontal">
+            <label id="upload-config">
+                Load config
+                <input class="file-input" type="file" accept=".json" oninput="loadConfig()" />
+            </label>
+            <button id="download-config" onclick="downloadConfig()">Download Config</button>
+        </div>
+        <div class="flex-horizontal">
+            <div>
+                <div id="spacing-text-area" class="text-area"></div>
+                <div id="spacing-keyboard" class="keyboard"></div>
+            </div>
+            <div class="verticalLine">
+                <div class="canvas">
+                    <img id="config-letter-preview-image" src="" width="256px" height="256px"
+                        style="position:absolute" />
+                    <svg width="256" height="256" style="position:absolute">
+                        <rect id="config-letter-rect" width=64 height=256 x=96 style="fill:rgba(255, 128, 128, 0.5)" />
+                    </svg>
+                </div>
+                <div class="flex-horizontal">
+                    <p>width</p>
+                    <input id="config-letter-width" type="number" class="number-input"
+                        onchange="updateLetterConfigToInput()" value="0" min="0" />
+                </div>
+                <div class="flex-horizontal">
+                    <p>offset</p>
+                    <input id="config-letter-offset" type="number" class="number-input"
+                        onchange="updateLetterConfigToInput()" value="0" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-vertical dev-tool hidden">
+        <div class="flex-horizontal">
+            <div id="kerning-canvas-view" class="canvas-wide">
+                <img id="kerning-image-view-first" src="" width="256px" height="256px" style="position:absolute" />
+                <img id="kerning-image-view-second" src="" width="256px" height="256px" style="position:absolute" />
+            </div>
+            <div id="kerning-canvas-debug" class="canvas-wide">
+                <img id="kerning-image-debug-first" src="" width="256px" height="256px" style="position:absolute" />
+                <img id="kerning-image-debug-second" src="" width="256px" height="256px" style="position:absolute" />
+                <svg width="384" height="256" style="position:absolute">
+                    <rect id="kerning-rect-first" width=64 height=256 x=96 style="fill:rgba(128, 128, 255, 0.5)" />
+                    <rect id="kerning-rect-second" width=64 height=256 x=96 style="fill:rgba(128, 255, 128, 0.5)" />
+                </svg>
+            </div>
+        </div>
+        <div class="flex-horizontal-baseline">
+            <div class="flex-vertical">
+                <div id="kerning-keyboard-first" class="keyboard"></div>
+                <div id="kerning-keyboard-second" class="keyboard"></div>
+            </div>
+            <div class="verticalLine">
+                <div class="flex-horizontal">
+                    <p>Kerning offset</p>
+                    <input id="kerning-letter-width" type="number" class="number-input"
+                        onchange="updateSelectedKerningOffset()" value="0" />
+                </div>
+                <div class="flex-horizontal">
+                    <button id="kerning-button-prev" onclick="kerningSelectPrev()">Previous</button>
+                    <button id="kerning-button-next" onclick="kerningSelectNext()"
+                        style="margin-left: 4px;">Next</button>
                 </div>
             </div>
         </div>
