@@ -2,6 +2,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" width="384pt" height="384pt" viewBox="0 0 384 384" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
   <g transform="translate(0,384)scale(.075,.075)">
-    <path id="path1" d="M 2400 -2560 l 0 1540 155 0 155 0 0 -1540 0 -1540 -155 0 -155 0 0 1540 z " />
+    <path id="path1" d="M 2151 -4099 c -74 32 -136 61 -138 63 -2 2 33 91 78 197 319 757 460 1212 564 1824 36 209 94 651 115 865 17 177 -6 158 169 140 82 -9 153 -19 157 -22 8 -8 -4 -125 -52 -514 -104 -851 -242 -1393 -542 -2134 -119 -293 -198 -474 -208 -476 -5 -1 -69 24 -143 57 z " />
   </g>
 </svg>
